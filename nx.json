@@ -17,14 +17,13 @@
     ],
     "prod": [
       "!{projectRoot}/**/*.spec.tsx"
+    ],
+    "production": [
+      "default"
     ]
   },
   "targetDefaults": {
     "build": {
-      "inputs": [
-        "prod",
-        "^prod"
-      ],
       "dependsOn": [
         "^build"
       ]
